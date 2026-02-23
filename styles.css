@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e8ecef;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #5d6d6e;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    color: #3498db;
+}
+
+nav a[aria-current="page"] {
+    font-weight: 600;
+}
+
+/* Header */
+header {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #3498db;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.3em;
+    color: #5d6d6e;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #34495e;
+}
+
+/* Content */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+/* Components */
+.credential {
+    background: #ecf0f1;
+    padding: 25px;
+    border-radius: 5px;
+    border-left: 5px solid #3498db;
+    margin: 0;
+}
+
+.credential strong {
+    font-size: 1.2em;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.service {
+    margin-bottom: 40px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.service:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service h3 {
+    margin-top: 0;
+}
+
+.stats {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.stats h2 {
+    border-left: none;
+    padding-left: 0;
+}
+
+.stats ul {
+    margin-left: 0;
+    list-style-position: inside;
+}
+
+.contact {
+    margin-top: 10px;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.contact h2 {
+    border-left: none;
+    padding-left: 0;
+}
+
+.rate-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1.05em;
+}
+
+.rate-table th,
+.rate-table td {
+    text-align: left;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.rate-table th {
+    background: #ecf0f1;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.rate-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+a:focus-visible {
+    outline: 3px solid #3498db;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+    color: #95a5a6;
+    font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .tagline {
+        font-size: 1.1em;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .rate-table {
+        font-size: 0.95em;
+    }
+
+    .rate-table th,
+    .rate-table td {
+        padding: 8px 10px;
+    }
+}
