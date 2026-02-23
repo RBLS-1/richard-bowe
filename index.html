@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Richard Bowe - Content editor specialising in trading and finance education. Lead editor for Trading with Rayner.">
     <title>Richard Bowe - Trading & Finance Content Editor</title>
+    <link rel="canonical" href="https://richard-bowe.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://richard-bowe.com/">
+    <meta property="og:title" content="Richard Bowe - Trading & Finance Content Editor">
+    <meta property="og:description" content="Content editor specialising in trading and finance education. Lead editor for Trading with Rayner. 500+ articles, 210,000+ followers.">
+    <meta property="og:image" content="https://richard-bowe.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Richard Bowe - Trading & Finance Content Editor">
+    <meta name="twitter:description" content="Content editor specialising in trading and finance education. Lead editor for Trading with Rayner.">
     <style>
         * {
             margin: 0;
@@ -40,7 +49,7 @@
         
         .tagline {
             font-size: 1.3em;
-            color: #7f8c8d;
+            color: #5d6d6e;
             font-weight: 300;
         }
         
@@ -115,6 +124,12 @@
             text-decoration: underline;
             color: #2980b9;
         }
+
+        a:focus-visible {
+            outline: 3px solid #3498db;
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
         
         footer {
             margin-top: 60px;
@@ -147,6 +162,7 @@
             <p class="tagline">Content Editor Specialising in Trading & Finance Education</p>
         </header>
 
+        <main>
         <section>
             <h2>About</h2>
             <p>I'm a British content editor based in Japan, specialising in trading and finance education. With a Computer Science background and 13+ years of teaching experience, I help trading educators and financial platforms create clear, accurate content that makes complex concepts accessible to traders at all levels.</p>
@@ -189,15 +205,17 @@
             </ul>
         </section>
 
-        <div class="contact">
+        <section class="contact">
             <h2>Get in Touch</h2>
             <p>Looking for an editor who understands both the technical details and how to explain them clearly?</p>
             <p><strong>Email:</strong> <a href="mailto:rich@richard-bowe.com">rich@richard-bowe.com</a></p>
-        </div>
+        </section>
+        </main>
 
         <footer>
-            <p>&copy; 2026 Richard Bowe. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Richard Bowe. All rights reserved.</p>
         </footer>
     </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
