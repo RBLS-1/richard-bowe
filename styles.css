@@ -237,6 +237,80 @@ li {
     padding-left: 0;
 }
 
+/* ── Client type cards (homepage hub) ───────────────────── */
+
+.client-type {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.client-type:last-child {
+    margin-bottom: 0;
+}
+
+.client-type:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
+}
+
+.client-type h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.client-type p {
+    margin-bottom: 14px;
+}
+
+.cta-link {
+    display: inline-block;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.cta-link:hover {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* ── Work page section filter nav ───────────────────────── */
+
+.work-filter {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.work-filter a {
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #64748b;
+    text-decoration: none;
+    padding: 6px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    transition: all 0.15s ease;
+    background: #ffffff;
+}
+
+.work-filter a:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+    color: #1e293b;
+    text-decoration: none;
+}
+
 /* ── Rate table ──────────────────────────────────────────── */
 
 .rate-table {
